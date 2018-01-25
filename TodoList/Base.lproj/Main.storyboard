@@ -19,16 +19,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgC-qd-EBf">
-                                <rect key="frame" x="142" y="265" width="50" height="39"/>
+                                <rect key="frame" x="144" y="269" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Hit me!"/>
+                                <connections>
+                                    <action selector="showAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="iWa-Bo-ObP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ug0-9d-oHP">
+                                <rect key="frame" x="144" y="149" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="KnockKnock"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="snh-q9-kmN" appends="YES" id="C1v-pF-ugo"/>
+                            <outletCollection property="gestureRecognizers" destination="z4A-I5-tyE" appends="YES" id="yyD-wr-CmZ"/>
+                            <outletCollection property="gestureRecognizers" destination="c8P-ig-loH" appends="YES" id="zj7-rg-9rV"/>
+                            <outletCollection property="gestureRecognizers" destination="8C9-m8-baD" appends="YES" id="xPc-VV-qbu"/>
+                            <outletCollection property="gestureRecognizers" destination="hEA-ny-Pv6" appends="YES" id="Sfa-p8-838"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <rotationGestureRecognizer id="snh-q9-kmN"/>
+                <rotationGestureRecognizer id="z4A-I5-tyE"/>
+                <rotationGestureRecognizer id="c8P-ig-loH"/>
+                <pinchGestureRecognizer id="8C9-m8-baD"/>
+                <rotationGestureRecognizer id="hEA-ny-Pv6"/>
             </objects>
             <point key="canvasLocation" x="136.875" y="133.09859154929578"/>
         </scene>
